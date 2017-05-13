@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <TextView
+            android:gravity="center"
+            android:text="Add Round Trip"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:id="@+id/textView"
+            android:textColor="@color/colorPurple"
+            android:textSize="35sp"
+            android:textStyle="normal|bold|italic" />
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:textStyle="normal|bold|italic"
+                android:textSize="20dp"
+                android:textColor="@color/colorPurple"
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.12"
+                android:text="    Trip Name"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.08"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:textStyle="normal|bold|italic"
+                android:textSize="20dp"
+                android:textColor="@color/colorPurple"
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.11"
+                android:text="    Start Point"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <AutoCompleteTextView
+                android:editable="false"
+                android:id="@+id/editText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.96"
+                android:ems="10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:textStyle="normal|bold|italic"
+                android:textSize="20dp"
+                android:textColor="@color/colorPurple"
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.55"
+                android:text="    End Point"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <AutoCompleteTextView
+                android:editable="false"
+                android:id="@+id/editText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:textSize="26dp"
+                android:layout_marginTop="36dp"
+                android:background="@color/colorPurple"
+                android:textColorHint="#fff"
+                android:hint="Date"
+                android:id="@+id/DateBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.34"
+                android:ems="10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:textSize="26dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPurple"
+                android:textColorHint="#fff"
+                android:id="@+id/TimeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.19"
+                android:ems="10"
+                android:hint="time" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:textStyle="normal|bold|italic"
+                android:textSize="20dp"
+                android:textColor="@color/colorPurple"
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.23"
+                android:text="    Notes"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09"
+                android:ems="10"
+                android:inputType="textMultiLine" />
+        </LinearLayout>
+
+            <Button
+
+                android:textSize="26dp"
+                android:layout_marginTop="42dp"
+                android:background="@color/colorPurple"
+                android:textColorHint="#fff"
+                android:id="@+id/button3"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:hint="  Add   " />
+
+
+    </LinearLayout>
+</ScrollView>
